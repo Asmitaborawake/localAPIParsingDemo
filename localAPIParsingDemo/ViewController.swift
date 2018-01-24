@@ -15,6 +15,7 @@ class ViewController: UIViewController {
        
         
         do {
+            
             if let file = Bundle.main.url(forResource: "userAPIt", withExtension: "txt") {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
